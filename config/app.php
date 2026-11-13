@@ -47,6 +47,7 @@ return [
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
     'key' => env('APP_KEY'),
+    'salt' => env('APP_SALT'),
     'cipher' => 'AES-256-CBC',
 
     'maintenance' => [

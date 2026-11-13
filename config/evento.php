@@ -5,7 +5,7 @@ declare(strict_types=1);
 return [
     'assets_url' => env('EVENTO_ASSETS_URL', ''),
 
-    'hashids_salt' => env('APP_SALT', 'evento-default-salt'),
+    'hashids_salt' => env('APP_SALT', null),
     'legacy_hashids_salt' => env('EVENTO_LEGACY_HASHIDS_SALT', '1'),
     'hashids_length' => (int) env('EVENTO_HASHIDS_LENGTH', 6),
     'random_code_hashids_length' => (int) env('EVENTO_RANDOM_CODE_HASHIDS_LENGTH', 9),
