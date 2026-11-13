@@ -18,5 +18,9 @@ class AppServiceProvider extends ServiceProvider
     {
         Passport::$clientUuids = false;
         Passport::enablePasswordGrant();
+
+        $this->app->booted(function (): void {
+            $this->app['router']->getRoutes()->refreshNameLookups();
+        });
     }
 }

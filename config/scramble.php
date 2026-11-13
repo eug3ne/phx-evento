@@ -24,6 +24,13 @@ return [
 
     'servers' => null,
 
+    /*
+     * Load Scramble's development tools on documentation pages.
+     */
+    'dev_tools' => [
+        'enabled' => env('SCRAMBLE_DEV_TOOLS', env('APP_DEBUG', false)),
+    ],
+
     'middleware' => [
         'web',
         RestrictedDocsAccess::class,
